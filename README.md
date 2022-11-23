@@ -66,7 +66,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Mock Up
 
-The following image demonstrates the application appearance:
+The following video demonstrates the application appearance:
 
 
 
@@ -75,7 +75,7 @@ The following image demonstrates the application appearance:
 
 
 
-Image Link Goes Here
+ Video Goes Here
 
 
 
