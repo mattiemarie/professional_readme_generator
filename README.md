@@ -1,47 +1,67 @@
-# professional_readme_generator
+# Node.JS: Professional README Generator
+UCF Coding Bootcamp Challenge 09
 
-# Weather Dashboard
-UCF Coding Bootcamp Challenge 06
 
 ## User Story
 
-AS A traveler
+AS A developer
 
-I WANT to see the weathr outlook for multiple cities
+I WANT a README generator
 
-SO THAT I can plan a trip accordingly
+SO THAT I can quickly create a professional
+
+README for a new project
 
 ## Acceptance Criteria
 
-GIVEN a weather dashboard with form inputs
+GIVEN a command-line application that accepts user input
 
-WHEN I search for a city
+WHEN I am prompted for information about my application 
 
-THEN I am presented with current and future conditions for
+repository
 
-that city and that city is added to the search history
+THEN a high-quality, professional README.md is generated
 
-WHEN I view current weather conditions for that city
+with the title of my project and sections entitled Description,
 
-THEN I am presented with the city name, the date, an icon 
+Table of Contents, Installation, Usage, License, Contributing,
 
-representation of weather conditions, the temperature, the
+Tests, and Questions
 
-humidity, and the the wind speed
+WHEN I enter my project title
 
-WHEN I view future weather conditions for that city
+THEN this is displayed as the title of the README
 
-THEN I am presented with a 5-day forecast that displays the
+WHEN I enter a description, installation instructions, usage
 
-date, an icon representation of weather conditions, the
+information, contribution guidelines, and test instructions
 
-temperature, the wind speed, and the humidity
+THEN this information is added to the sections of the README
 
-WHEN I click on a city in the search history
+entitled Description, Installation, Usage, Contributing, and Tests
 
-THEN I am again presented with current and future conditions
+WHEN I choose a license for my application from a list of options
 
-for that city
+THEN a badge for that license is added near the top of the README
+and a notice is added to the section of the README entitled License
+
+that explains which license the application is covered under
+
+WHEN I enter my GitHub username
+
+THEN this is added to the section of the README entitled Questions,
+
+with a link to my GitHub profile
+
+WHEN I enter my email address
+
+THEN this is added to the section of the README entitled Questions,
+
+with instructions on how to reach me with additional questions
+
+WHEN I click on the links in the Table of Contents
+
+THEN I am taken to the corresponding section of the README
 
 ## Mock Up
 
@@ -54,7 +74,7 @@ The following image demonstrates the application appearance:
 
 
 
-![image](https://user-images.githubusercontent.com/111001779/201225144-16b4f517-3925-4453-86e9-e9fdc9b78130.png)
+Image Link Goes Here
 
 
 
@@ -63,9 +83,8 @@ The following image demonstrates the application appearance:
 
 
 
-The following is the url to the diplyed web application: https://mattiemarie.github.io/weather_dashboard/
+The following is the url to the diplyed web application:
 
 
 ## Description
 
-The goal of Challenge 06 is to create a weather dashboard that a traveler can use to input a city they wish to see weather conditions for. The dashboard will show the chosen city's Temperature, Wind Speed, and Humidity for the day searched and for the upcoming 5 days.
