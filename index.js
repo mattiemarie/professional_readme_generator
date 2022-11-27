@@ -5,22 +5,26 @@ const fs = require('fs');
 const { default: test } = require('node:test');
 
 //README file formatting
-const generateReadme = ({ title, description, installation, usage, license, contributions, tests, questions }) =>
+const generateReadme = ({ title, description, installation, usage, contributions, tests, email, github, license }) =>
   `#${title}
+  ## ${license}
   ## Description ${description}
   ## Table of Contents
   [Installation](#installation)
   [Usage](#usage)
-  [License](#license)
   [Contributing](#Contributions)
   [Tests](#tests)
   [Questions](#questions)
+  [License](#license)
   ## Installation ${installation}
   ## Usage ${usage}
-  ## License ${license}
   ## Contributions ${contributions}
   ## Tests ${tests}
-  ## Questions ${questions}`;
+  ## Questions
+  For any questions contact me:
+  Email: ${email}
+  Github: www.github.com/${github}
+  ## License © ${license} All Rights Reserved.`;
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -44,12 +48,6 @@ inquirer
         name: 'Installations',
         message: 'Installations?',
     },
-    //License
-    {
-        type: 'input',
-        name: 'License',
-        message: 'Liscenses?',
-    },
     //Contributions
     {
         type: 'input',
@@ -63,11 +61,25 @@ inquirer
         message: 'Description of your project?',
     },
     //Questions
+    //Email
     {
         type: 'input',
-        name: 'description',
-        message: 'Description of your project?',
+        name: 'email',
+        message: 'Please Enter your Email Address?',
     },
+    //Github
+    {
+        type: 'input',
+        name: 'github',
+        message: 'Please Enter your Github Username?',
+    },
+     //License
+     {
+        type: 'list',
+        name: 'License',
+        message: 'Which License is affiliated with you project?',
+        choices:[],
+     },
   ])
 
 .then((answers) => {
