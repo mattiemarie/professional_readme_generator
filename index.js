@@ -2,31 +2,25 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const { default: test } = require('node:test');
 
 //README file formatting
-const generateHTML = ({ title, description, tableOfContents, installation, usage, license, contributing, tests, questions }) =>
-  `<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-  <title>Document</title>
-</head>
-<body>
-  <div class="jumbotron jumbotron-fluid">
-  <div class="container">
-    <h1 class="display-4">Hi! My name is ${title}</h1>
-    <p class="lead">I am from ${description}.</p>
-    <h3>Example heading <span class="badge badge-secondary">Contact Me</span></h3>
-    <ul class="list-group">
-      <li class="list-group-item">My GitHub username is ${tableOfContents}</li>
-      <li class="list-group-item">LinkedIn: ${installation}</li>
-    </ul>
-  </div>
-</div>
-</body>
-</html>`;
+const generateReadme = ({ title, description, installation, usage, license, contributions, tests, questions }) =>
+  `#${title}
+  ## Description ${description}
+  ## Table of Contents
+  [Installation](#installation)
+  [Usage](#usage)
+  [License](#license)
+  [Contributing](#Contributions)
+  [Tests](#tests)
+  [Questions](#questions)
+  ## Installation ${installation}
+  ## Usage ${usage}
+  ## License ${license}
+  ## Contributions ${contributions}
+  ## Tests ${tests}
+  ## Questions ${questions}`;
 
 // TODO: Create an array of questions for user input
 inquirer
@@ -43,29 +37,50 @@ inquirer
         name: 'description',
         message: 'Description of your project?',
     },
-    //Table of Contents
 
     //Installations
+    {
+        type: 'input',
+        name: 'Installations',
+        message: 'Installations?',
+    },
+    //License
+    {
+        type: 'input',
+        name: 'License',
+        message: 'Liscenses?',
+    },
+    //Contributions
     {
         type: 'input',
         name: 'description',
         message: 'Description of your project?',
     },
-    //License
-
-    //Contributing
-
     //Tests
-
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Description of your project?',
+    },
     //Questions
+    {
+        type: 'input',
+        name: 'description',
+        message: 'Description of your project?',
+    },
   ])
 
+.then((answers) => {
+    const readmePageContent = generateReadme(answers);
 
+    fs.writeFile('README.md', readmePageContent, (err) =>
+    err ? console.log(err) : console.log('Successfully created README.md'))
+})
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+// function writeToFile(fileName, data) {}
 
-// TODO: Create a function to initialize app
-function init() {}
+// // TODO: Create a function to initialize app
+// function init() {}
 
-// Function call to initialize app
-init();
+// // Function call to initialize app
+// init();
