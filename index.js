@@ -24,20 +24,26 @@ const promptUser = () => {
       //Installations
       {
           type: 'input',
-          name: 'Installations',
-          message: 'Installations?',
+          name: 'installation',
+          message: 'Installations instructions for your project?',
       },
+       //Usage
+       {
+        type: 'input',
+        name: 'usage',
+        message: 'Usage information for your project?',
+    },
       //Contributions
       {
           type: 'input',
-          name: 'description',
-          message: 'Description of your project?',
+          name: 'contributions',
+          message: 'Contribution Guidelines for your project?',
       },
       //Tests
       {
           type: 'input',
-          name: 'description',
-          message: 'Description of your project?',
+          name: 'tests',
+          message: 'Test Instructions for your project?',
       },
       //Questions
       //Email
@@ -55,9 +61,9 @@ const promptUser = () => {
        //License
        {
           type: 'list',
-          name: 'License',
+          name: 'license',
           message: 'Which License is affiliated with you project?',
-          choices:[],
+          choices:['MIT', 'GPLv2', 'Apache', 'GPLv3'],
        },
     ]);
 };
