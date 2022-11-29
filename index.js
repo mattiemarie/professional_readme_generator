@@ -70,32 +70,37 @@ const promptUser = () => {
 
 //README file formatting
 const generateReadme = ({ title, description, installation, usage, contributions, tests, email, github, license }) =>
-  `#${title}
-  ## ${license}
-  ## Description ${description}
+  `# ${title}
+  ## Description 
+  ${description}
   ## Table of Contents
   [Installation](#installation)
   [Usage](#usage)
-  [Contributing](#Contributions)
+  [Contributing](#contributions)
   [Tests](#tests)
   [Questions](#questions)
   [License](#license)
-  ## Installation ${installation}
-  ## Usage ${usage}
-  ## Contributions ${contributions}
-  ## Tests ${tests}
+  ## Installation
+  ${installation}
+  ## Usage
+  ${usage}
+  ## Contributions
+  ${contributions}
+  ## Tests
+  ${tests}
   ## Questions
   For any questions contact me:
   Email: ${email}
   Github: www.github.com/${github}
-  ## License © ${license} All Rights Reserved.`;
+  ## License
+  ${license} © All Rights Reserved.`;
 
 //Create a function to initialize app
 const init = () => {
     promptUser()
         //Write to README.md file
-        .then((answers) => writeFile('README.md', generateReadme(answers)))
-        .then(() => console.log('Successfully wrote to README.md'))
+        .then((answers) => writeFile('READMEgenerated.md', generateReadme(answers)))
+        .then(() => console.log('Successfully wrote to READMEgenerated.md'))
         .catch((err) => console.error(err));        
 };
 
