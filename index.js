@@ -71,8 +71,10 @@ const promptUser = () => {
 //README file formatting
 const generateReadme = ({ title, description, installation, usage, contributions, tests, email, github, license }) =>
   `# ${title}
+
   ## Description 
   ${description}
+
   ## Table of Contents
   [Installation](#installation)
   [Usage](#usage)
@@ -80,18 +82,24 @@ const generateReadme = ({ title, description, installation, usage, contributions
   [Tests](#tests)
   [Questions](#questions)
   [License](#license)
+
   ## Installation
   ${installation}
+
   ## Usage
   ${usage}
+
   ## Contributions
   ${contributions}
+
   ## Tests
   ${tests}
+
   ## Questions
   For any questions contact me:
   Email: ${email}
   Github: www.github.com/${github}
+  
   ## License
   ${license} © All Rights Reserved.`;
 

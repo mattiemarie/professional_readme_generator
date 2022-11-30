@@ -1,6 +1,8 @@
-# Title of my project
+# this is the title of my project
+
   ## Description 
-  A brief description stating what my project is about will go in this section.
+  this is a brief description of my project it is a read me generator that creates a custom read me file based on\
+
   ## Table of Contents
   [Installation](#installation)
   [Usage](#usage)
@@ -8,17 +10,23 @@
   [Tests](#tests)
   [Questions](#questions)
   [License](#license)
+
   ## Installation
-  Installation instructions that pertain to my project will go in this section.
+  Installations for the project
+
   ## Usage
-  Usage information that is needed for my project will go in this section.
+  usage information for the project goes here
+
   ## Contributions
-  Contributors and Contribution Guidelines for my project will go here.
+  contributors for the project 
+
   ## Tests
-  Test instructions for my project will go in this section.
+  test instructions for the project will go here
+
   ## Questions
   For any questions contact me:
   Email: gonzalem@lssc.edu
   Github: www.github.com/mattiemarie
+  
   ## License
   Apache © All Rights Reserved.
