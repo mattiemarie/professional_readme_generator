@@ -1,11 +1,9 @@
-# 
+# Title of my project
 
-  ## [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]
-
-  ## (https://opensource.org/licenses/MIT)
+  ## ![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)
 
   ## Description 
-  
+  description of my project
 
   ## Table of Contents
   [Installation](#installation)
@@ -16,21 +14,22 @@
   [License](#license)
 
   ## Installation
-  
+  installation instructions
 
   ## Usage
-  
+  usage information
 
   ## Contributions
-  
+  contribution guidelines
 
   ## Tests
-  
+  test instructions
 
   ## Questions
   For any questions contact me:
-  Email: 
-  Github: www.github.com/
+  Email: gonzalem@lssc.edu
+  Github: www.github.com/mattimarie
   
   ## License
-  MIT © All Rights Reserved.
+  GPLv2 © All Rights Reserved.
+  (https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)

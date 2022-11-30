@@ -71,13 +71,13 @@ const promptUser = () => {
 function renderLicenseBadge(license) {
 var badge = ''
 if (license === "MIT") {
-    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
+    badge = '![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)'
 } else if (license === "GPLv2") {
-    badge = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]'
+    badge = '![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)'
 } else if (license === "Apache") {
-    badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]'
+    badge = '![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)'
 } else if (license === "GPLv3") {
-    badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]'
+    badge = '![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)'
 } else {
     badge = ''
 }
@@ -108,8 +108,6 @@ const generateReadme = ({ title, description, installation, usage, contributions
 
   ## ${renderLicenseBadge(license)}
 
-  ## ${renderLicenseLink(license)}
-
   ## Description 
   ${description}
 
@@ -139,7 +137,8 @@ const generateReadme = ({ title, description, installation, usage, contributions
   Github: www.github.com/${github}
   
   ## License
-  ${license} © All Rights Reserved.`;
+  ${license} © All Rights Reserved.
+  ${renderLicenseLink(license)}`;
 
 //Create a function to initialize app
 const init = () => {
