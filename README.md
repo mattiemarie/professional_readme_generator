@@ -65,7 +65,7 @@ THEN I am taken to the corresponding section of the README
 
 ## Mock Up
 
-The following is a link to a demo of the Challenge 09 Node.JS-README Generator:
+The following is a link to an uploaded demo of the Challenge 09 Node.JS-README Generator:
 
 
 
@@ -73,7 +73,7 @@ https://www.youtube.com/watch?v=xzwL8-NON6k
 
 
 
-
+*There is also a video file attached in the above files to view with a bit better quality if needed.
 
 ## Description
 
