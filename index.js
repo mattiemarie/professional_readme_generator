@@ -63,14 +63,34 @@ const promptUser = () => {
           type: 'list',
           name: 'license',
           message: 'Which License is affiliated with you project?',
-          choices:['MIT', 'GPLv2', 'Apache', 'GPLv3'],
+          choices:['MIT', 'GPLv2', 'Apache', 'GPLv3', 'none'],
        },
     ]);
 };
 
+// License Badge
+
+function renderLicenseBadge(license) {
+var badge = ''
+if (license === MIT) {
+    badge = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)]'
+} else if (license === GPLv2) {
+    badge = '[![License: GPL v2](https://img.shields.io/badge/License-GPL%20v2-blue.svg)]'
+} else if (license === Apache) {
+    badge = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)]'
+} else if (license === GPLv3) {
+    badge = '[![License: GPL v3](https://img.shields.io/badge/License-GPL%20v3-blue.svg)]'
+} else {
+    badge = ''
+}
+return badge
+}
+
 //README file formatting
-const generateReadme = ({ title, description, installation, usage, contributions, tests, email, github, license }) =>
+const generateReadme = ({ title, description, installation, usage, contributions, tests, email, github, license, badge}) =>
   `# ${title}
+
+  ## ${badge}
 
   ## Description 
   ${description}

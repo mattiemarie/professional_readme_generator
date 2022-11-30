@@ -1,7 +1,9 @@
-# this is the title of my project
+# 
+
+  ## undefined
 
   ## Description 
-  this is a brief description of my project it is a read me generator that creates a custom read me file based on\
+  
 
   ## Table of Contents
   [Installation](#installation)
@@ -12,21 +14,21 @@
   [License](#license)
 
   ## Installation
-  Installations for the project
+  
 
   ## Usage
-  usage information for the project goes here
+  
 
   ## Contributions
-  contributors for the project 
+  
 
   ## Tests
-  test instructions for the project will go here
+  
 
   ## Questions
   For any questions contact me:
-  Email: gonzalem@lssc.edu
-  Github: www.github.com/mattiemarie
+  Email: 
+  Github: www.github.com/
   
   ## License
-  Apache © All Rights Reserved.
+  MIT © All Rights Reserved.
