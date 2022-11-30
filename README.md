@@ -6,25 +6,69 @@ Challenge 09 Node.JS
 ## User Story
 
 AS A developer
+
 I WANT a README generator
-SO THAT I can quickly create a professional README for a new project
+
+SO THAT I can quickly create a professional
+
+README for a new project
 
 
 ## Acceptance Criteria
 
+GIVEN a command-line application that accepts user input
+
+WHEN I am prompted for information about my application repository
+
+THEN a high-quality, professional README.md is generated with the
+
+title of my project and sections entitled Description, Table of Contents,
+
+Installation, Usage, License, Contributing, Tests, and Questions
+
+WHEN I enter my project title
+
+THEN this is displayed as the title of the README
+
+WHEN I enter a description, installation instructions, usage information,
+
+contribution guidelines, and test instructions
+
+THEN this information is added to the sections of the README entitled
+
+Description, Installation, Usage, Contributing, and Tests
+
+WHEN I choose a license for my application from a list of options
+
+THEN a badge for that license is added near the top of the README and a
+
+notice is added to the section of the README entitled License that explains
+
+which license the application is covered under
+
+WHEN I enter my GitHub username
+
+THEN this is added to the section of the README entitled Questions, with a
+
+link to my GitHub profile
+
+WHEN I enter my email address
+
+THEN this is added to the section of the README entitled Questions, with
+
+instructions on how to reach me with additional questions
+
+WHEN I click on the links in the Table of Contents
+
+THEN I am taken to the corresponding section of the README
 
 
 ## Mock Up
 
-The following is an image that shows the web application's appearance and functionality:
-
-![image](https://user-images.githubusercontent.com/111001779/195946832-f8008c9c-62c3-4210-888e-596b18b1c215.png)
+The following is a link to a demo of the Challenge 09 Node.JS-README Generator:
 
 
-The following is the url to the diplyed web application:
-
-https://mattiemarie.github.io/java_script_password_generator/
 
 ## Description
 
-The goal of Challenge 03 was to create a password generator using JavaScript. The user will get to have a password created for them with personalized qualities, allowing them to choose the password length and whether or not it should contain: uppercase letters, lowercase letters, numbers and/or symbols.
+The goal of Challenge 09 was to create a program with Node.JS that allows a user to generatate a custom README.md file. Each section of the custom README.md is filled out based on how the users answered questions pertaining to the project they wish to create the Markdown file for.
